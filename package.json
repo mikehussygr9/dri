@@ -1,11 +1,10 @@
 {
   "name": "netlify-express",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/netlify-lambda serve src",
-    "build": "./node_modules/.bin/netlify-lambda build src"
+    "start": "netlify-lambda serve src",
+    "build": "netlify-lambda build src"
   },
   "keywords": [],
   "author": "",
@@ -13,9 +12,20 @@
   "dependencies": {
     "express": "^4.17.1",
     "geoip-country": "^4.0.92",
+    "ipinfo": "^1.5.1",
     "netlify-lambda": "^2.0.15",
     "node-iplocate": "^1.0.2",
     "request-ip": "^2.1.3",
     "serverless-http": "^2.7.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikehussygr9/netlife.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mikehussygr9/netlife/issues"
+  },
+  "homepage": "https://github.com/mikehussygr9/netlife#readme",
+  "description": ""
 }
