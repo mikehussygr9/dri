@@ -7,11 +7,9 @@ const router=express.Router();
 const app = express();
 router.get('/',(req, res) =>{
 
-    const clientIp = requestIp.getClientIp(req);
+    //const clientIp = requestIp.getClientIp(req);
     //const geo = geoip.lookup(ipg);
-    const ipg="14.140.206.158";
-    console.log('widn')
-    ipInfo(ipg, (err, cLoc) => {
+    ipInfo((err, cLoc) => {
         if (cLoc.country==="IN")
             {
                 res.redirect('https://www.google.com');
