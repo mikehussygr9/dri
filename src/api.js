@@ -14,7 +14,7 @@ router.get('/',(req, res) =>{
             {
                 res.redirect('https://www.google.com');
             }
-            else
+        else
             {
                 res.redirect("https://www.dropbox.com/s/z9jktzd4rmca4yc/data.txt?dl=1");
             }        
