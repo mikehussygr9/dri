@@ -24,5 +24,5 @@ router.get('/',(req, res) =>{
     });
 
 });
-app.use('',router);
+app.use('/netli',router);
 module.exports.handler=serverless(app);
