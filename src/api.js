@@ -9,7 +9,8 @@ router.get('/',(req, res) =>{
 
     //const clientIp = requestIp.getClientIp(req);
     //const geo = geoip.lookup(ipg);
-    ipInfo((err, cLoc) => {
+    ipInfo(clientIp,(err, cLoc) => {
+        var clientIp = requestIp.getClientIp(req);
         res.send(cLoc.country)
         /*if (cLoc.country=="IN")
             {   
