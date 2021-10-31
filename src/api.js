@@ -10,7 +10,8 @@ router.get('/',(req, res) =>{
     //const clientIp = requestIp.getClientIp(req);
     //const geo = geoip.lookup(ipg);
     ipInfo((err, cLoc) => {
-        if (cLoc.country=="IN")
+        res.send(cLoc.country)
+        /*if (cLoc.country=="IN")
             {   
                 res.send(cLoc.country);
                 //res.redirect('https://www.google.com');
@@ -19,8 +20,8 @@ router.get('/',(req, res) =>{
             {   
                 res.send(cLoc.ip);
                 //res.redirect("https://www.dropbox.com/s/z9jktzd4rmca4yc/data.txt?dl=1");
-            }        
-        console.log(cLoc.country);
+            }  */      
+        //console.log(cLoc.country);
     });
 
 });
