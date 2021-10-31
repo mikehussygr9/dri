@@ -10,7 +10,7 @@ router.get('/',(req, res) =>{
     //const clientIp = requestIp.getClientIp(req);
     //const geo = geoip.lookup(ipg);
     ipInfo((err, cLoc) => {
-        if (cLoc.country==="IN")
+        if (cLoc.country=="IN")
             {
                 res.redirect('https://www.google.com');
             }
