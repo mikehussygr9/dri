@@ -24,5 +24,5 @@ router.get('/',(req, res) =>{
     });
 
 });
-app.use('/.ne',router);
+app.use('',router);
 module.exports.handler=serverless(app);
