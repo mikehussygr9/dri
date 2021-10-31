@@ -8,7 +8,7 @@ const app = express();
 router.get('/',(req, res) =>{
 
     const clientIp = requestIp.getClientIp(req);
-    var clientIp = clientIp.toString();
+    const clientIp = clientIp.toString();
     //const geo = geoip.lookup(ipg);
     ipInfo(clientIp,(err, cLoc) => {
         res.send(cLoc.country)
