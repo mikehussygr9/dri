@@ -11,12 +11,14 @@ router.get('/',(req, res) =>{
     //const geo = geoip.lookup(ipg);
     ipInfo((err, cLoc) => {
         if (cLoc.country=="IN")
-            {
-                res.redirect('https://www.google.com');
+            {   
+                res.send(cLoc.country);
+                //res.redirect('https://www.google.com');
             }
         else
-            {
-                res.redirect("https://www.dropbox.com/s/z9jktzd4rmca4yc/data.txt?dl=1");
+            {   
+                res.send(cLoc.ip);
+                //res.redirect("https://www.dropbox.com/s/z9jktzd4rmca4yc/data.txt?dl=1");
             }        
         console.log(cLoc.country);
     });
