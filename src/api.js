@@ -7,10 +7,10 @@ const router=express.Router();
 const app = express();
 router.get('/',(req, res) =>{
 
-    //const clientIp = requestIp.getClientIp(req);
+    const clientIp = requestIp.getClientIp(req);
+    var clientIp = clientIp.toString();
     //const geo = geoip.lookup(ipg);
     ipInfo(clientIp,(err, cLoc) => {
-        var clientIp = requestIp.getClientIp(req);
         res.send(cLoc.country)
         /*if (cLoc.country=="IN")
             {   
