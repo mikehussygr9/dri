@@ -2,8 +2,8 @@
  command="npm run build && npm run export"
  pubmish="out"
  functions="dist-functions"
- 
+
 [[redirects]]
- to="/*"
- from="/404"
- status=400
+  from = '/api/*'
+  to = '/.netlify/functions/:splat'
+  status = 200
