@@ -6,7 +6,7 @@
     "dev":  "next start"
     "build":  "next build"
     "export": "next export"
-    "start": "netlify-lambda serve src",
+    "start": "next start",
     "start-api": "netlify-lambda serve functions"
   },
   "keywords": [],
