@@ -3,7 +3,7 @@
  pubmish="out"
  functions="dist-functions"
  
- [[redirects]]
-  to="/*"
-  from="/404"
-  status=400
+[[redirects]]
+ to="/*"
+ from="/404"
+ status=400
