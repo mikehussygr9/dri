@@ -1,7 +1,5 @@
 [build]
- command="npm run build && npm run export"
- pubmish="out"
- functions="dist-functions"
+  functions="dist-functions"
 
 [[redirects]]
   from = '/api/*'
